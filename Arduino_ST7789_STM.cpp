@@ -330,32 +330,32 @@ uint16_t Arduino_ST7789::Color565(uint8_t r, uint8_t g, uint8_t b)
 
 // ----------------------------------------------------------
 // ----------------------------------------------------------
-void Arduino_ST7789::invertDisplay(boolean mode) 
+void Arduino_ST7789::invertDisplay(bool mode) 
 {
   writeCmd(!mode ? ST7789_INVON : ST7789_INVOFF);  // modes inverted
 }
 
 // ----------------------------------------------------------
-void Arduino_ST7789::partialDisplay(boolean mode) 
+void Arduino_ST7789::partialDisplay(bool mode) 
 {
   writeCmd(mode ? ST7789_PTLON : ST7789_NORON);
 }
 
 // ----------------------------------------------------------
-void Arduino_ST7789::sleepDisplay(boolean mode) 
+void Arduino_ST7789::sleepDisplay(bool mode) 
 {
   writeCmd(mode ? ST7789_SLPIN : ST7789_SLPOUT);
   delay(5);
 }
 
 // ----------------------------------------------------------
-void Arduino_ST7789::enableDisplay(boolean mode) 
+void Arduino_ST7789::enableDisplay(bool mode) 
 {
   writeCmd(mode ? ST7789_DISPON : ST7789_DISPOFF);
 }
 
 // ----------------------------------------------------------
-void Arduino_ST7789::idleDisplay(boolean mode) 
+void Arduino_ST7789::idleDisplay(bool mode) 
 {
   writeCmd(mode ? ST7789_IDMON : ST7789_IDMOFF);
 }

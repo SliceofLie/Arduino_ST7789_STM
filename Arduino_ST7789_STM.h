@@ -184,11 +184,11 @@ class Arduino_ST7789 : public Adafruit_GFX {
   void drawImage(int16_t x, int16_t y, int16_t w, int16_t h, uint16_t *img);
   void drawImageF(int16_t x, int16_t y, int16_t w, int16_t h, const uint16_t *img16);
   void setRotation(uint8_t r);
-  void invertDisplay(boolean mode);
-  void partialDisplay(boolean mode);
-  void sleepDisplay(boolean mode);
-  void enableDisplay(boolean mode);
-  void idleDisplay(boolean mode);
+  void invertDisplay(bool mode);
+  void partialDisplay(bool mode);
+  void sleepDisplay(bool mode);
+  void enableDisplay(bool mode);
+  void idleDisplay(bool mode);
   void resetDisplay();
   void setScrollArea(uint16_t tfa, uint16_t bfa);
   void setScroll(uint16_t vsp);
